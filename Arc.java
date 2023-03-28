@@ -1,4 +1,4 @@
-import java.awt.Graphics;
+import java.awt.*;
 
 public class Arc extends Shape{
 
@@ -12,7 +12,7 @@ public class Arc extends Shape{
     }
 
     public void draw(Graphics g) {
-        g.setColor(getColor());
+        g.setColor(Color.GREEN);
         g.drawArc(getMinX(), getMinY(), getWidth(), getHeight(), startAngle, arcAngle);
     }
 

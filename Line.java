@@ -1,4 +1,4 @@
-import java.awt.Graphics;
+import java.awt.*;
 
 public class Line extends Shape {
 
@@ -7,7 +7,7 @@ public class Line extends Shape {
     }
 
     public void draw(Graphics g) {
-        g.setColor(getColor());
+        g.setColor(Color.BLUE);
         g.drawLine(getP1().x, getP1().y, getP2().x, getP2().y);
     }
 }
